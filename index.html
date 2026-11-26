@@ -27,10 +27,11 @@
 <style>
   .hero{background-image:linear-gradient(100deg, rgba(11,16,32,0.96) 0%, rgba(48,22,120,0.80) 46%, rgba(255,61,154,0.38) 100%), url('hero-bercy.jpg');}
   @media (max-width:640px){ .hero{background-image:linear-gradient(180deg, rgba(11,16,32,0.90) 0%, rgba(48,22,120,0.78) 100%), url('hero-bercy.jpg');} }
-  .hero-id{display:flex; align-items:center; gap:28px;}
-  .hero-photo{margin:0; flex:0 0 auto; width:150px; border-radius:14px; overflow:hidden; border:2px solid rgba(34,211,238,0.55); box-shadow:0 10px 30px rgba(0,0,0,0.45);}
+  .hero-content{display:grid; grid-template-columns:minmax(0,1fr) auto; column-gap:56px; align-items:center;}
+  .hero-photo{margin:0; width:300px; border-radius:18px; overflow:hidden; border:2px solid rgba(34,211,238,0.55); box-shadow:0 16px 40px rgba(0,0,0,0.5);}
   .hero-photo img{display:block; width:100%; height:auto; aspect-ratio:4/5; object-fit:cover; object-position:center 28%;}
-  @media (max-width:640px){ .hero-id{gap:16px;} .hero-photo{width:96px; border-radius:10px;} }
+  @media (max-width:920px){ .hero-photo{width:230px;} .hero-content{column-gap:32px;} }
+  @media (max-width:640px){ .hero-content{grid-template-columns:1fr;} .hero-photo{order:-1; width:180px; margin-bottom:24px; border-radius:14px;} }
 </style>
 </head>
 <body>
@@ -78,16 +79,16 @@
     </g>
   </svg>
   <div class="wrap hero-content">
+    <div class="hero-text">
     <div class="eyebrow">Portfolio — BTS SIO SISR</div>
-    <div class="hero-id">
-      <h1>Kenny Ngos-Maroude</h1>
-      <figure class="hero-photo"><img src="kenny.jpg" alt="Portrait de Kenny Ngos-Maroude" width="720" height="960"></figure>
-    </div>
+    <h1>Kenny Ngos-Maroude</h1>
     <p class="tag">Étudiant en administration systèmes &amp; réseaux, alternant à CGEFI (Ivry-sur-Seine). Windows Server, Linux, virtualisation et infrastructure réseau.</p>
     <div class="hero-actions">
       <a class="btn primary" href="#experience">Voir mon parcours</a>
       <a class="btn ghost" href="#contact">Me contacter</a>
     </div>
+    </div>
+    <figure class="hero-photo"><img src="kenny.jpg" alt="Portrait de Kenny Ngos-Maroude" width="720" height="960"></figure>
   </div>
 </section>
 
@@ -230,6 +231,7 @@
           <tr class="grp"><td colspan="8">Réalisations en milieu professionnel, première année</td></tr>
 <tr><td class="real">Préparation du matériel informatique (ordinateurs, téléphones) et mastérisation des postes.<span class="comp"><b>Compétences :</b> Mettre à disposition des utilisateurs un service informatique</span></td><td class="per">Depuis le 08/09/25</td><td class="mk"></td><td class="mk"></td><td class="mk"></td><td class="mk"></td><td class="mk"><span class="dot" aria-label="oui"></span></td><td class="mk"></td></tr>
 <tr><td class="real">Gestion de l&#x27;inventaire informatique : recensement du parc et inventaire des disques durs pour évaluer leur obsolescence.<span class="comp"><b>Compétences :</b> Gérer le patrimoine informatique</span></td><td class="per">Depuis le 08/09/25</td><td class="mk"><span class="dot" aria-label="oui"></span></td><td class="mk"></td><td class="mk"></td><td class="mk"></td><td class="mk"></td><td class="mk"></td></tr>
+          <tr class="grp"><td colspan="8">Réalisations en milieu professionnel, deuxième année</td></tr>
 <tr><td class="real">Création de clés USB bootables pour l&#x27;installation des postes.<span class="comp"><b>Compétences :</b> Mettre à disposition des utilisateurs un service informatique</span></td><td class="per">Depuis le 08/09/25</td><td class="mk"></td><td class="mk"></td><td class="mk"></td><td class="mk"></td><td class="mk"><span class="dot" aria-label="oui"></span></td><td class="mk"></td></tr>
 <tr><td class="real">Aménagement de parc informatique : raccordement de copieurs, installation de stations d&#x27;accueil et de doubles écrans.<span class="comp"><b>Compétences :</b> Gérer le patrimoine informatique · Mettre à disposition des utilisateurs un service informatique</span></td><td class="per">—</td><td class="mk"><span class="dot" aria-label="oui"></span></td><td class="mk"></td><td class="mk"></td><td class="mk"></td><td class="mk"><span class="dot" aria-label="oui"></span></td><td class="mk"></td></tr>
 <tr><td class="real">Consultation et prise en charge des tickets de demandes d&#x27;assistance.<span class="comp"><b>Compétences :</b> Répondre aux incidents et aux demandes d&#x27;assistance et d&#x27;évolution</span></td><td class="per">—</td><td class="mk"></td><td class="mk"><span class="dot" aria-label="oui"></span></td><td class="mk"></td><td class="mk"></td><td class="mk"></td><td class="mk"></td></tr>
