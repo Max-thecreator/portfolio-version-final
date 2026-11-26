@@ -27,10 +27,10 @@
 <style>
   .hero{background-image:linear-gradient(100deg, rgba(11,16,32,0.96) 0%, rgba(48,22,120,0.80) 46%, rgba(255,61,154,0.38) 100%), url('hero-bercy.jpg');}
   @media (max-width:640px){ .hero{background-image:linear-gradient(180deg, rgba(11,16,32,0.90) 0%, rgba(48,22,120,0.78) 100%), url('hero-bercy.jpg');} }
-  .about-grid{display:grid; grid-template-columns:220px 1fr; gap:32px; align-items:start;}
-  .about-photo{margin:0; border-radius:12px; overflow:hidden; border:1px solid var(--line); box-shadow:0 0 0 4px rgba(34,211,238,0.08);}
-  .about-photo img{display:block; width:100%; height:auto; aspect-ratio:3/4; object-fit:cover;}
-  @media (max-width:640px){ .about-grid{grid-template-columns:1fr; gap:22px;} .about-photo{max-width:240px;} }
+  .hero-id{display:flex; align-items:center; gap:28px;}
+  .hero-photo{margin:0; flex:0 0 auto; width:150px; border-radius:14px; overflow:hidden; border:2px solid rgba(34,211,238,0.55); box-shadow:0 10px 30px rgba(0,0,0,0.45);}
+  .hero-photo img{display:block; width:100%; height:auto; aspect-ratio:4/5; object-fit:cover; object-position:center 28%;}
+  @media (max-width:640px){ .hero-id{gap:16px;} .hero-photo{width:96px; border-radius:10px;} }
 </style>
 </head>
 <body>
@@ -79,7 +79,10 @@
   </svg>
   <div class="wrap hero-content">
     <div class="eyebrow">Portfolio — BTS SIO SISR</div>
-    <h1>Kenny Ngos-Maroude</h1>
+    <div class="hero-id">
+      <h1>Kenny Ngos-Maroude</h1>
+      <figure class="hero-photo"><img src="kenny.jpg" alt="Portrait de Kenny Ngos-Maroude" width="720" height="960"></figure>
+    </div>
     <p class="tag">Étudiant en administration systèmes &amp; réseaux, alternant à CGEFI (Ivry-sur-Seine). Windows Server, Linux, virtualisation et infrastructure réseau.</p>
     <div class="hero-actions">
       <a class="btn primary" href="#experience">Voir mon parcours</a>
@@ -91,14 +94,9 @@
 <section id="about">
   <div class="wrap">
     <div class="section-head"><span class="num">01</span><h2>À propos</h2></div>
-    <div class="about-grid">
-    <figure class="about-photo"><img src="kenny.jpg" alt="Portrait de Kenny Ngos-Maroude" width="720" height="960" loading="lazy"></figure>
-    <div class="about-text">
     <p class="lead">Je m'appelle Kenny Ngos-Maroude et je suis en deuxième année de BTS SIO option SISR au CFA Schola Nova, à Paris. Avant cela, j'ai préparé un bac professionnel Systèmes Numériques option RISC au lycée Saint-Nicolas.</p>
     <p class="lead">Je suis en alternance au CGEFI à Ivry-sur-Seine en tant qu'assistant de proximité informatique, après deux stages techniques à la Mairie de Saint-Ouen et chez UpCoop. J'ai aussi monté des machines virtuelles sous Windows et Linux pour mes travaux pratiques.</p>
     <p class="lead">En dehors de l'informatique, je pratique la musculation, le karting, les sports de combat et l'aviron, et j'aime le cinéma, les comics et les mangas.</p>
-    </div>
-    </div>
   </div>
 </section>
 
